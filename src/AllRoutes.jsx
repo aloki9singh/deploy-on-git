@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Css from "../../gitstar/src/Components/Css";
+import Css from "./Components/Css";
 
-import Home from "../../gitstar/src/Components/Home";
-import Html from "../../gitstar/src/Components/Html";
-import JavaScript from "../../gitstar/src/Components/Javascript";
+import Home from "./Components/Home";
+import Html from "./Components/Html";
+import JavaScript from "./Components/Javascript";
 
 
 export const AllRoutes = () => {
