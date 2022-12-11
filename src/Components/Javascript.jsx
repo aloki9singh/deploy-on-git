@@ -1,15 +1,14 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import {
   Box,
-  Flex,
+
   Button,
-  useDisclosure,
-  useColorModeValue,
+
   Stack,
   Heading,
   Container,
   Image,
-  Grid,
+
   Card,
   HStack,
   VStack,
@@ -17,10 +16,9 @@ import {
   Text,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import axios from "axios";
+
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 
 function getData(page = 1) {
   return axios.get(

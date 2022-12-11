@@ -1,15 +1,11 @@
-import { ReactNode, useState } from "react";
+import {  useState } from "react";
 import {
   Box,
-  Flex,
   Button,
-  useDisclosure,
-  useColorModeValue,
   Stack,
   Heading,
   Container,
   Image,
-  Grid,
   Card,
   HStack,
   VStack,
@@ -17,10 +13,9 @@ import {
   Text,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
 import axios from "axios";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 function getData(page = 1) {
   return axios.get(
@@ -28,12 +23,6 @@ function getData(page = 1) {
   );
 }
 
-// const breakpoints = createBreakpoints({
-//   sm: "320px",
-//   md: "768px",
-//   lg: "960px",
-//   xl: "1200px",
-// });
 export default function Home() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
@@ -60,7 +49,7 @@ export default function Home() {
           <Heading>Total count:- {data.total_count}</Heading>
           <SimpleGrid
             //   templateColumns="rat(4,1fr)"
-         columns={{base:4,sm:1,md:2,lg:4}}
+            columns={{ base: 4, sm: 1, md: 2, lg: 4 }}
             gap={5}
           >
             {data.items.map((e) => (
