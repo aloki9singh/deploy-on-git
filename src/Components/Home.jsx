@@ -42,7 +42,7 @@ export default function Home() {
   //   var totalPage = Math.ceil(data.total_count / 10);
   useEffect(() => {
     getData(page);
-  }, []);
+  }, [page]);
   console.log(page);
   return (
     <>
