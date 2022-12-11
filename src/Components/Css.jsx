@@ -27,7 +27,6 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  //   var totalPage = Math.ceil(data.total_count / 10);
 
   useEffect(() => {
     setLoading(true);

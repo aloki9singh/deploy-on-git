@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 
 import { useEffect } from "react";
+import axios from "axios";
 
 
 function getData(page = 1) {
