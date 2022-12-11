@@ -46,7 +46,7 @@ export default function Home() {
   console.log(page);
   return (
     <>
-      {loading || data == "" ? (
+      {loading || data === "" ? (
         <Container>Loading...</Container>
       ) : (
         <Box p={4}>
@@ -111,7 +111,7 @@ export default function Home() {
               </a>
             ))}
           </SimpleGrid>
-          <Button disabled={page == 1} onClick={() => setPage(page - 1)}>
+          <Button disabled={page === 1} onClick={() => setPage(page - 1)}>
             Prev
           </Button>
           <Button>{page}</Button>

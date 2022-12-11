@@ -45,7 +45,7 @@ export default function Html() {
   return (
     <>
       {/* //img   {e.clone_url} */}
-      {loading || data == "" ? (
+      {loading || data === "" ? (
         <Container>Loading...</Container>
       ) : (
         <Box p={4}>
@@ -113,7 +113,7 @@ export default function Html() {
               // </a>
             ))}
           </SimpleGrid>
-          <Button disabled={page == 1} onClick={() => setPage(page - 1)}>
+          <Button disabled={page === 1} onClick={() => setPage(page - 1)}>
             Prev
           </Button>
           <Button>{page}</Button>
