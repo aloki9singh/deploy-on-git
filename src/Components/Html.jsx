@@ -45,7 +45,7 @@ export default function Html() {
   return (
     <>
       {/* //img   {e.clone_url} */}
-      {loading || data === "" ? (
+      {loading || data.length === 0 ? (
         <Container>Loading...</Container>
       ) : (
         <Box p={4}>

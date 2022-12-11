@@ -46,7 +46,7 @@ export default function Home() {
   console.log(page);
   return (
     <>
-      {loading || data === "" ? (
+      {loading || data.length ===0 ? (
         <Container>Loading...</Container>
       ) : (
         <Box p={4}>
